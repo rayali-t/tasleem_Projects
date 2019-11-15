@@ -1,0 +1,34 @@
+//@import url("/scss/images/cleaner.jpg");
+@import "mixin";
+
+.imageSize {
+  width: $pg-width;
+  height: 600px;
+  //opacity: 0.5;
+  background-image: url('./images/cleaner.jpg');
+}
+
+
+.circle-icon {
+  @include image(auto, no-repeat, center, url('./images/pick_a_time.png'));
+}
+
+.icon-1 {
+  @include image(auto, no-repeat, center, url('./images/done.png'));
+}
+
+.square-icon {
+  @include image(cover, no-repeat, center, url('./images/swiffer.jpg'));
+}
+
+.girlImg {
+  @include image(cover, no-repeat, center, url('./images/girl.jpg'));
+}
+
+.circle-icon-2 {
+  @include image(cover, no-repeat, center, url('./images/bus_woman.jpg'));
+}
+
+.icon-2 {
+  @include image(cover, no-repeat, center, url('./images/done.png'));
+}
