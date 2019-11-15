@@ -1,0 +1,6 @@
+*.log
+.idea/
+/dist
+**/npm-cache
+/node_modules
+/docs
