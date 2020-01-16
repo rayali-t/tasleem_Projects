@@ -1,0 +1,9 @@
+<form  #itemForm="ngForm">
+  Title:<input type="text" name ="title" ngModel required><!--ng model is a directive used for 2 way binding-->
+  <br><br>Description:<input type="text" name="description" ngModel>
+  <br><br>Due Date:<input type="date" name="dueDate" ngModel required>
+  <br><br>Time:<input type="time" name="time" ngModel required>
+  <hr>
+  <!--<button type="submit">Add Item</button>-->
+  <button (click)="onAddPost(itemForm)">Add Item</button> <!--call of onAddPost on click of add item button-->
+</form>

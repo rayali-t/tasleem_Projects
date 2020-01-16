@@ -1,0 +1,40 @@
+<div  *ngIf="items.length > 0">
+<table>
+  <tbody>
+  <tr>
+    <td>Check</td>
+    <td>Id</td>
+    <td>Title</td>
+    <td>Description</td>
+    <td>Due date</td>
+    <td>Time</td>
+    <td>Status</td>
+    <td>View</td>
+    <td>Delete</td>
+  <tr>
+    <tr *ngFor="let item of items">
+    <td><input type="checkbox" name="isCompleted" ngModel/></td>
+    <td>{{item._id}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.description}}</td>
+      <td>{{item.dueDate}}</td>
+      <td>{{item.time}}</td>
+    <td><span id="{{item._id}}"></span>{{item.status}}</td>
+    <td><button value="{{item._id}}" (click)="viewItemDetails(item._id)">VIEW</button></td>
+    <td><button value="{{item}}" (click)="markCompleted(item)">UPDATE</button></td>
+    </tr>
+    </tbody>
+  </table>
+<!--<button>EDIT</button>
+<button>DELETE</button>-->
+</div>
+<p *ngIf="items.length<=0">No posts added yet!</p>
+
+<br>
+<div class="todo-item">
+  Title: <span id="title"></span>&nbsp;
+  <br>
+  Description: <span id="desc"></span><br>
+  Due date: <span id="dueDate"></span><br>
+  Time: <span id="time"></span>
+</div>
