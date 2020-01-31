@@ -1,0 +1,58 @@
+@import '../../main-styles.scss';
+
+.top-bar{
+    display:flex;
+    width: 100%;
+    height: 30px;
+    //background: linear-gradient(75deg, rgb(214, 180, 247), rgb(173, 203, 231));
+    justify-content: center; //horizantal align set in center
+    align-items: center; //vertical align center
+
+    h1{
+        //font-family: 'Lato';
+        font-family: cursive;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-transform: uppercase; //text set to uppercase
+        color: white;
+    }
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .example-container > * {
+    width: 50%;
+  }
+
+tbody,td,table{
+ //border: 1px solid black;
+ background-color: rgb(173, 193, 212);
+
+
+}
+#bg{
+    background: linear-gradient(rgba(124, 128, 128, 0.0), rgba(9, 62, 60,0.9)),
+    url(../../../Images/Register.jpeg);
+    background-size: cover;
+    height: 700px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+table {
+   // border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+td{
+
+    padding: 15px;
+    color: solid black;
+
+}

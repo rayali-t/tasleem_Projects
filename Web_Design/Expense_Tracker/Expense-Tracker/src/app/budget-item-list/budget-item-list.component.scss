@@ -1,0 +1,50 @@
+@import '../../main-styles.scss';
+
+.budget-items-section{
+    display: flex;
+    padding: 50px;
+    justify-content: center; //horizantal align set in center
+    align-items: center; //vertical align set in center
+
+    .budget-items-container{
+        display: flex;
+        max-width: 680px;
+        height: 100%;
+        width: 100%;
+
+        .income-column, .expenses-column{ //Common styles applied here 
+            display: flex;
+            flex-direction: column;
+            flex-basis: 0; //for colums to be  of same size regardless of content
+            flex-grow: 1;
+
+            h1{
+                font-family: 'Lato';
+                font-size: '24px';
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-left:auto; 
+                margin-right:auto;
+            }
+
+            .budget-items{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                
+
+            }
+        }
+        .income-column{
+            margin-right: 35px;
+            h1{
+                color: $green;
+            }
+        }
+        .expenses-column{
+            h1{
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<div class="back">
+   <div class="top"> <span >Make your Bill Payment!!</span></div> <br>
+<mat-card>
+    <form>
+        <mat-form-field>
+            <input type="number" [(ngModel)]="finalAmount" matInput placeholder="Enter Amount">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Description">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Choose Your Bill type</mat-label>
+            <mat-select>
+              <mat-option value='Salary'>Wi-Fi Bill</mat-option>
+              <mat-option value='Interest'>Electricity Bill</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+            <!-- <div>
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </div> -->
+
+          <br>
+          <input type="date">Enter Date
+          <br><br><br>
+
+
+      <!-- <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">Add</button> -->
+      <button id="paypal-checkout-btn" type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
+          ngbPopover="Make your Payment Securely">
+
+  </button>
+
+    </form>
+</mat-card>
+</div>

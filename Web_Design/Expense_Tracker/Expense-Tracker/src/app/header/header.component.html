@@ -1,0 +1,27 @@
+<mat-toolbar class = "nav sticky">
+    <span class="navlogin">
+      <a mat-button routerLink="/dashboard" routerLinkActive="mat-accent">Home</a>
+    </span>
+    <span class="navlogin">
+        <a mat-button (click)=contactUs() >Contact Us</a>
+    </span>
+    <span class="spacer"></span>
+    <ul>
+        <div ngbDropdown class="d-inline-block">
+            <a class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>User Profile</a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+             <button ngbDropdownItem routerLink="/userProfile" routerLinkActive="mat-accent" class="navlogin">UserProfile</button>
+             <button ngbDropdownItem routerLink="/signup" routerLinkActive="mat-accent" >Sign Up</button>
+             <button ngbDropdownItem routerLink="/login" routerLinkActive="mat-accent" >Login</button>
+            </div>
+          </div>
+
+          <div ngbDropdown class="d-inline-block">
+            <a class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Settings</a>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+             <button ngbDropdownItem (click)="onLogout()">Logout</button>
+            </div>
+          </div>
+
+          </ul>
+        </mat-toolbar>

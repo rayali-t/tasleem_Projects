@@ -1,0 +1,49 @@
+<div id = "bg">
+<div class="top-bar">
+    <h1>Wondering Where Your Money Goes!!</h1>
+  </div>
+  <section class="add-item-section">
+    <div class="add-item-container">
+    <app-add-item-form style = "padding: 20px;"(formSubmit)="addItem($event)"></app-add-item-form>
+    </div>
+  </section>
+<!-- to remove space between add item form and budget item list margin top set to 0 -->
+  <!-- <hr style = "margin-top: 0"> -->
+
+  <app-budget-item-list [budgetItems] = "budgetItems" (delete)="deleteItem($event)" (update) = "updateItem($event)"></app-budget-item-list>
+
+
+<div  *ngIf="expensesNew.length > 0">
+  <table>
+    <tbody>
+    <tr>
+      <!-- <td>Id</td>
+      <td>User Id</td> -->
+      <td>Created date</td>
+      <td>Amount</td>
+      <td>Description</td>
+      <td>Type</td>
+
+      <!-- <td>Due date</td> -->
+      <!-- <td>View</td>
+      <td>Update</td> -->
+    <tr>
+    <tr *ngFor="let expense of expensesNew">
+      <!-- <td>{{expense._id}}</td>
+      <td>{{expense.userId}}</td> -->
+      <td>{{expense.createDate}}</td>
+      <td>{{expense.amount}}</td>
+      <td>{{expense.description}}</td>
+
+
+      <!-- <td>{{expense.modifiedDate}}</td> -->
+     <!-- <td><button value="{{expense._id}}" (click)="viewEx(item._id)">VIEW</button></td>
+      <td><button value="{{expense}}" (click)="markCompleted(item)">UPDATE</button></td> -->
+    </tr>
+    </tbody>
+  </table>
+  <!--<button>EDIT</button>
+  <button>DELETE</button>-->
+</div>
+<p *ngIf="expensesNew.length<=0">No expenses added yet!</p>
+</div>

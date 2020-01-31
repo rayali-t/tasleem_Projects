@@ -1,0 +1,30 @@
+<div id="wrapper">
+      <h4>Account Settings</h4>
+      <hr>
+      <form [formGroup]="updateUser" class="update-user">
+
+         <div class="form-row">
+            <div class="col" class="col-sm-4">
+                  <label id="emailId">User: </label>
+                  <input #emailId matInput type="text" formControlName="emailId" class="form-control"  placeholder={{userdetails.emailId}} readonly>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="col" class="col-sm-4">
+               <label id="firstName">First Name</label>
+               <input #firstName matInput type="text" formControlName="firstName" class="form-control" placeholder="First Name">
+            </div>
+         </div>
+
+        <div class="form-row">
+            <div class="col" class="col-sm-4">
+               <label id="lastName">Last Name</label>
+               <input #lastName matInput type="text" formControlName="lastName" class="form-control" placeholder="Last Name">
+            </div>
+         </div>
+            <div>
+               <button (click)="updateUserInfo(firstName,lastName)" class="btn btn-info"
+                       id="updatebtn"> UPDATE </button>
+            </div>
+      </form>
+</div>

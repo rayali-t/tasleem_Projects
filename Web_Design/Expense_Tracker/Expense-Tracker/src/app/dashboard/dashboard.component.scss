@@ -1,0 +1,40 @@
+.first{
+  background:
+  linear-gradient(rgba(124, 128, 128, 0.0), rgba(9, 62, 60,0.9)),
+  url('../../../Images/landingPage.jpg');
+  background-size: cover;
+  height: 100px;
+  padding-bottom: 0px;
+}
+
+.second{
+  background:
+  linear-gradient(rgba(124, 128, 128, 0.0), rgba(9, 62, 60,0.9)),
+  url('../../../Images/Graphs.jpg');
+  background-size: cover;
+  height: 100px;
+  padding-bottom: 0px;
+}
+
+.third{
+  background:
+  linear-gradient(rgba(124, 128, 128, 0.0), rgba(9, 62, 60,0.9)),
+  url('../../../Images/View1.jpg');
+  background-size: cover;
+  height: 100px;
+  padding-bottom: 0px;
+}
+
+.fourth{
+  background:
+  linear-gradient(rgba(124, 128, 128, 0.0), rgba(9, 62, 60,0.9)),
+  url('../../../Images/View2.jpg');
+  background-size: cover;
+  height: 100px;
+  padding-bottom: 0px;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+

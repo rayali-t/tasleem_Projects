@@ -1,0 +1,25 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile class="first" rowHeight="100">
+      <button mat-raised-button color="accent" routerLink="/main" routerLinkActive="mat-accent">
+        Add your Expenses</button> &nbsp;
+        <button mat-raised-button color="accent" routerLink="/addincome" routerLinkActive="mat-accent">
+          Make your Bill Payment</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile class="second">
+      <button mat-raised-button color="accent" routerLink="/userdashboard" routerLinkActive="mat-accent">View your Statistics</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile class="third">
+      <button mat-raised-button color="accent" (click)="downloadPDF()">Download PDF Report</button>&nbsp;&nbsp;
+      <button mat-raised-button color="accent" (click)="downloadCSV()">Download CSV Report</button>
+  </mat-grid-tile>
+
+  <mat-grid-tile class="fourth">
+      <button mat-raised-button color="accent" routerLink="/subscribe"> Buy Premium Subscription</button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- <button type="button" (click)="downloadPDF()">
+  Download
+</button> -->
