@@ -12,7 +12,7 @@
     "babel-core": "^6.26.3",
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.0",
     "ng2-search-filter": "^0.5.1",
