@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/neu-mis-info6150-fall-2019/assignment-8-rayali-t#readme",
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "mongoose": "^4.13.3"
   }
 }
